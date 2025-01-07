@@ -8,6 +8,7 @@ html, body {
     
 
     --link: rgb(62, 239, 77);
+    --highlight: rgb(246, 255, 116);
     --email: rgba(27, 27, 249, 0.961);
 }
 
@@ -17,6 +18,15 @@ html, body {
     padding: 10px;
     box-sizing: border-box; 
 }
+
+::selection {
+    background: var(--link);
+}
+
+::-moz-selection {
+    background: var(--link);
+}
+
 
 .poppins-regular {
     font-family: "Poppins", serif;
